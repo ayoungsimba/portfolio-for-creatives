@@ -32,11 +32,8 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Noto Serif (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* Raleway (clean and modern for body text) */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Montserrat (used throughout the site) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
 
@@ -102,52 +99,52 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Raleway", sans-serif;
-  --font-family-heading: "Noto Serif", serif;
-  --font-family-project-title: "Raleway", sans-serif;
+  --font-family-body: "Montserrat", sans-serif;
+  --font-family-heading: "Montserrat", sans-serif;
+  --font-family-project-title: "Montserrat", sans-serif;
   /* Core Colours */
-  --color-text-primary: #222;
-  --color-text-secondary: #333;
+  --color-text-primary: #000000;
+  --color-text-secondary: #000000;
   --color-accent-primary: #f0482b;
   --color-accent-secondary: #ff057c;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: rgba(255, 255, 255, 0.85);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #2f2d2d;
-  --color-bg-about: #2f2d2d;
-  --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
+  --color-bg: #ffffff;
+  --color-bg-about: #ffffff;
+  --color-bg-footer: #ffffff;
+  --color-bg-holding-page: #ffffff;
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #000000;
+  --h2-color: #000000;
+  --h3-color: #000000;
+  --h4-color: #000000;
+  --h5-color: #000000;
+  --h6-color: #000000;
   /* Special Text Colours */
-  --color-text-holding-title: #ebedf0;
-  --color-text-project-category: #ffffff;
-  --color-text-project-description: #222;
-  --color-text-project-sidebar: #222;
-  --color-text-project-title: #595959;
-  --color-text-work-grid-title: #ffffff;
+  --color-text-holding-title: #000000;
+  --color-text-project-category: #000000;
+  --color-text-project-description: #000000;
+  --color-text-project-sidebar: #000000;
+  --color-text-project-title: #000000;
+  --color-text-work-grid-title: #000000;
   /* Link States */
-  --color-link: #00aeff;
-  --color-link-hover: #ff4e4e;
-  --color-link-visited: #5200ff;
+  --color-link: #000000;
+  --color-link-hover: #000000;
+  --color-link-visited: #000000;
   /* Navigation */
-  --color-nav-link: #ffffff;
-  --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-link: #000000;
+  --color-nav-link-hover: #000000;
+  --color-nav-arrow: #000000;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #000000;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #f5f5f5;
-  --color-bg-project-description: #f5f5f5;
-  --color-bg-sidebar-project: transparentk;
-  --color-bg-sidebar-work: lemonchiffon;
+  --color-bg-full-width: #ffffff;
+  --color-bg-project-description: #ffffff;
+  --color-bg-sidebar-project: #ffffff;
+  --color-bg-sidebar-work: #ffffff;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(
     -225deg,
@@ -157,7 +154,7 @@
   );
   /* Special Elements */
   --color-icon-heart: darkred;
-  --color-text-holding-footer: #f8f8ff;
+  --color-text-holding-footer: #000000;
   --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
@@ -430,7 +427,7 @@ svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: lightblue;
+  background: #ffffff;
   padding: var(--padding-small);
 }
 
@@ -525,7 +522,7 @@ sup {
 
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
-  color: var(--color-accent-primary); /* Uses your brand's dominant color */
+  color: var(--color-text-primary); /* Uses your brand's dominant color */
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
@@ -556,13 +553,11 @@ sup {
 
 /* ✨ Highlighted text — great for emphasis */
 .highlight-primary {
-  color: var(--color-accent-secondary);
+  color: var(--color-text-primary);
 }
 
 .highlight-gradient {
-  background: var(--color-gradient-hero);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--color-text-primary);
   font-weight: bold;
 }
 
@@ -865,7 +860,7 @@ a.nav-link-primary:hover {
 
 /* Project container for background and padding */
 .project-container {
-  background: var(--color-accent-primary); /* Set project background color */
+  background: #ffffff; /* Set project background color */
   padding: var(--padding-medium);
 }
 
