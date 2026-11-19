@@ -228,6 +228,41 @@ body {
   min-height: 100vh;
 }
 
+body.cura-page {
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #ffffff;
+  --h1-color: #ffffff;
+  --h2-color: #ffffff;
+  --h3-color: #ffffff;
+  --h4-color: #ffffff;
+  --h5-color: #ffffff;
+  --h6-color: #ffffff;
+  --color-text-project-category: #ffffff;
+  --color-text-project-description: #ffffff;
+  --color-text-project-sidebar: #ffffff;
+  --color-text-project-title: #ffffff;
+  --color-link: #ffffff;
+  --color-link-hover: #ffffff;
+  --color-link-visited: #ffffff;
+  --color-nav-link: #ffffff;
+  --color-nav-link-hover: #ffffff;
+  --color-nav-arrow: #ffffff;
+  --color-nav-arrow-stroke: #ffffff;
+  --color-bg: #000000;
+  --color-bg-about: #000000;
+  --color-bg-footer: #000000;
+  --color-bg-full-width: #000000;
+  --color-bg-project-description: #000000;
+  --color-bg-sidebar-project: #000000;
+  --color-bg-sidebar-work: #000000;
+  color: #ffffff;
+  background: #000000;
+}
+
+body.cura-page .project-container {
+  background: #000000;
+}
+
 /* ------------------------------- */
 /* 🖍️ Text Highlight Styles */
 /* This changes the background color when you highlight text (like when you click and drag to select it) */
